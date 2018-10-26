@@ -1,0 +1,10 @@
+server:
+  port: 7060
+  servlet:
+    context-path: /springcloud-sample-provider-account
+eureka:
+  instance:
+    hostname: 192.168.1.208
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.208:7000/eureka/

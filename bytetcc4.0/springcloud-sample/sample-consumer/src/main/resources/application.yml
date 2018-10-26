@@ -1,0 +1,16 @@
+server:
+  port: 7080
+
+eureka:
+  instance:
+    hostname: 192.168.1.208
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.208:7000/eureka/
+
+feign:
+  client:
+    config:
+      default:           #服务名，填写default为所有服务
+        connectTimeout: 10000
+        readTimeout: 120000
